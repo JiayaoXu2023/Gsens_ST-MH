@@ -60,7 +60,7 @@ for (j in 1:9){
                    rgx =r_data_16_26[j,2],
                    rgy =r_data_16_26[j,3],
                    n=N,
-                   h2=0.05 #SNP-based heritability estimates)
+                   h2=0.05) #SNP-based heritability estimates
 results<-BCI(M1_p1)
 results_select<-gsensout(results)
 gsensdta_16_26<-rbind(gsensdta_16_26, as.data.frame(t(results_select)))
